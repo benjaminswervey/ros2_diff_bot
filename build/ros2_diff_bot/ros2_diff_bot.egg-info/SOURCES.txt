@@ -10,6 +10,7 @@ setup.py
 ../../build/ros2_diff_bot/ros2_diff_bot.egg-info/zip-safe
 resource/ros2_diff_bot
 ros2_diff_bot/__init__.py
+ros2_diff_bot/encoder_calculator.py
 ros2_diff_bot/encoder_counter.py
 ros2_diff_bot/encoder_reader.py
 ros2_diff_bot/my_node.py
