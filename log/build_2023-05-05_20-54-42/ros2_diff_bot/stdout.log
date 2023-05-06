@@ -1,0 +1,32 @@
+running develop
+Removing /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages/ros2-diff-bot.egg-link (link to .)
+running egg_info
+writing ../../build/ros2_diff_bot/ros2_diff_bot.egg-info/PKG-INFO
+writing dependency_links to ../../build/ros2_diff_bot/ros2_diff_bot.egg-info/dependency_links.txt
+writing entry points to ../../build/ros2_diff_bot/ros2_diff_bot.egg-info/entry_points.txt
+writing requirements to ../../build/ros2_diff_bot/ros2_diff_bot.egg-info/requires.txt
+writing top-level names to ../../build/ros2_diff_bot/ros2_diff_bot.egg-info/top_level.txt
+reading manifest file '../../build/ros2_diff_bot/ros2_diff_bot.egg-info/SOURCES.txt'
+writing manifest file '../../build/ros2_diff_bot/ros2_diff_bot.egg-info/SOURCES.txt'
+running build
+running build_py
+copying ros2_diff_bot/encoder_reader.py -> /home/benjamin/ros2_diff_bot/build/ros2_diff_bot/build/lib/ros2_diff_bot
+copying ros2_diff_bot/encoder_counter.py -> /home/benjamin/ros2_diff_bot/build/ros2_diff_bot/build/lib/ros2_diff_bot
+running install
+running install_lib
+creating /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages/ros2_diff_bot
+copying /home/benjamin/ros2_diff_bot/build/ros2_diff_bot/build/lib/ros2_diff_bot/encoder_reader.py -> /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages/ros2_diff_bot
+copying /home/benjamin/ros2_diff_bot/build/ros2_diff_bot/build/lib/ros2_diff_bot/encoder_counter.py -> /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages/ros2_diff_bot
+copying /home/benjamin/ros2_diff_bot/build/ros2_diff_bot/build/lib/ros2_diff_bot/__init__.py -> /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages/ros2_diff_bot
+copying /home/benjamin/ros2_diff_bot/build/ros2_diff_bot/build/lib/ros2_diff_bot/my_node.py -> /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages/ros2_diff_bot
+byte-compiling /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages/ros2_diff_bot/encoder_reader.py to encoder_reader.cpython-310.pyc
+byte-compiling /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages/ros2_diff_bot/encoder_counter.py to encoder_counter.cpython-310.pyc
+byte-compiling /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages/ros2_diff_bot/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages/ros2_diff_bot/my_node.py to my_node.cpython-310.pyc
+running install_data
+running install_egg_info
+Copying ../../build/ros2_diff_bot/ros2_diff_bot.egg-info to /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages/ros2_diff_bot-0.0.0-py3.10.egg-info
+running install_scripts
+Installing encoder_counter script to /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/ros2_diff_bot
+Installing my_node = ros2_diff_bot.my_node:mainencoder_reader script to /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/ros2_diff_bot
+writing list of installed files to '/home/benjamin/ros2_diff_bot/build/ros2_diff_bot/install.log'

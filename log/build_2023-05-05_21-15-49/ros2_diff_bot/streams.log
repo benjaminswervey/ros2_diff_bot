@@ -1,0 +1,19 @@
+[0.594s] Invoking command in '/home/benjamin/ros2_diff_bot/build/ros2_diff_bot': PYTHONPATH=/home/benjamin/ros2_diff_bot/build/ros2_diff_bot/prefix_override:/home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/benjamin/ros2_diff_bot/build/ros2_diff_bot/build --no-deps install_data
+[0.847s] running develop
+[1.011s] running egg_info
+[1.011s] writing ros2_diff_bot.egg-info/PKG-INFO
+[1.011s] writing dependency_links to ros2_diff_bot.egg-info/dependency_links.txt
+[1.012s] writing entry points to ros2_diff_bot.egg-info/entry_points.txt
+[1.012s] writing requirements to ros2_diff_bot.egg-info/requires.txt
+[1.012s] writing top-level names to ros2_diff_bot.egg-info/top_level.txt
+[1.013s] reading manifest file 'ros2_diff_bot.egg-info/SOURCES.txt'
+[1.014s] writing manifest file 'ros2_diff_bot.egg-info/SOURCES.txt'
+[1.015s] running build_ext
+[1.015s] Creating /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages/ros2-diff-bot.egg-link (link to .)
+[1.015s] Installing encoder_counter script to /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/ros2_diff_bot
+[1.016s] Installing encoder_reader script to /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/ros2_diff_bot
+[1.016s] Installing my_node script to /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/ros2_diff_bot
+[1.016s] 
+[1.016s] Installed /home/benjamin/ros2_diff_bot/build/ros2_diff_bot
+[1.016s] running install_data
+[1.039s] Invoked command in '/home/benjamin/ros2_diff_bot/build/ros2_diff_bot' returned '0': PYTHONPATH=/home/benjamin/ros2_diff_bot/build/ros2_diff_bot/prefix_override:/home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/benjamin/ros2_diff_bot/build/ros2_diff_bot/build --no-deps install_data
