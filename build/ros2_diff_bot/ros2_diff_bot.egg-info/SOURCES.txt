@@ -14,6 +14,7 @@ ros2_diff_bot/encoder_calculator.py
 ros2_diff_bot/encoder_counter.py
 ros2_diff_bot/encoder_reader.py
 ros2_diff_bot/my_node.py
+ros2_diff_bot/pid_controller.py
 ros2_diff_bot.egg-info/PKG-INFO
 ros2_diff_bot.egg-info/SOURCES.txt
 ros2_diff_bot.egg-info/dependency_links.txt

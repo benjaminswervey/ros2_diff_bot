@@ -23,7 +23,8 @@ setup(
             'my_node = ros2_diff_bot.my_node:main',
             'encoder_reader = ros2_diff_bot.encoder_reader:main',
             'encoder_counter = ros2_diff_bot.encoder_counter:main',
-            'encoder_calculator = ros2_diff_bot.encoder_calculator:main'
+            'encoder_calculator = ros2_diff_bot.encoder_calculator:main',
+            'pid_controller = ros2_diff_bot.pid_controller:main'
         ],
     },
 )

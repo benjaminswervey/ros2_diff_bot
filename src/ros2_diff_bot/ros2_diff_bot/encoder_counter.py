@@ -42,11 +42,22 @@ class Encoder_Counter(Node):
         self.subscription = self.create_subscription(
             Int32MultiArray,
             '/left_encoder',
-            self.listener_callback,
+            self.listener_callback_left,
             10)
         self.subscription  # prevent unused variable warning
 
-    def listener_callback(self, msg):
+        self.subscription2 = self.create_subscription(
+            Int32MultiArray,
+            '/right_encoder',
+            self.listener_callback_right,
+            10)
+        self.subscription2
+
+    def listener_callback_right(self,msg):
+        num1=msg.data[0]
+        num2=msg.data[1]
+        self.right_enc_new=num1*2+num2
+    def listener_callback_left(self, msg):
         num1=msg.data[0]
         num2=msg.data[1]
         self.left_enc_new=num1*2+num2
@@ -82,7 +93,7 @@ class Encoder_Counter(Node):
                 self.left_count=self.left_count-1
             elif(self.left_enc_new==1):
                 self.left_count=self.left_count+1
-        '''
+        
         if(self.right_enc_prev==0):
             if(self.right_enc_new==1):
                 self.right_count=self.right_count-1
@@ -103,9 +114,9 @@ class Encoder_Counter(Node):
                 self.right_count=self.right_count-1
             elif(self.right_enc_new==1):
                 self.right_count=self.right_count+1
-        '''
+        
         self.left_enc_prev=self.left_enc_new
-        #self.right_enc_prev=self.right_enc_new  
+        self.right_enc_prev=self.right_enc_new  
         
     
 

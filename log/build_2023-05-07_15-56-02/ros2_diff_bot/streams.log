@@ -1,0 +1,21 @@
+[1.885s] Invoking command in '/home/benjamin/ros2_diff_bot/build/ros2_diff_bot': PYTHONPATH=/home/benjamin/ros2_diff_bot/build/ros2_diff_bot/prefix_override:/home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/benjamin/ros2_diff_bot/build/ros2_diff_bot/build --no-deps install_data
+[2.225s] running develop
+[2.471s] running egg_info
+[2.472s] writing ros2_diff_bot.egg-info/PKG-INFO
+[2.472s] writing dependency_links to ros2_diff_bot.egg-info/dependency_links.txt
+[2.472s] writing entry points to ros2_diff_bot.egg-info/entry_points.txt
+[2.472s] writing requirements to ros2_diff_bot.egg-info/requires.txt
+[2.472s] writing top-level names to ros2_diff_bot.egg-info/top_level.txt
+[2.474s] reading manifest file 'ros2_diff_bot.egg-info/SOURCES.txt'
+[2.488s] writing manifest file 'ros2_diff_bot.egg-info/SOURCES.txt'
+[2.490s] running build_ext
+[2.490s] Creating /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages/ros2-diff-bot.egg-link (link to .)
+[2.491s] Installing encoder_calculator script to /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/ros2_diff_bot
+[2.491s] Installing encoder_counter script to /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/ros2_diff_bot
+[2.491s] Installing encoder_reader script to /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/ros2_diff_bot
+[2.491s] Installing my_node script to /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/ros2_diff_bot
+[2.491s] Installing pid_controller script to /home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/ros2_diff_bot
+[2.492s] 
+[2.492s] Installed /home/benjamin/ros2_diff_bot/build/ros2_diff_bot
+[2.492s] running install_data
+[2.526s] Invoked command in '/home/benjamin/ros2_diff_bot/build/ros2_diff_bot' returned '0': PYTHONPATH=/home/benjamin/ros2_diff_bot/build/ros2_diff_bot/prefix_override:/home/benjamin/ros2_diff_bot/install/ros2_diff_bot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/benjamin/ros2_diff_bot/build/ros2_diff_bot/build --no-deps install_data
