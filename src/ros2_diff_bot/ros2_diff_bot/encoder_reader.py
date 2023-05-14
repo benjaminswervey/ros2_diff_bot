@@ -28,11 +28,11 @@ class Encoder_Reader(Node):
         
         
         super().__init__('encoder_reader')
-        '''
+        
         Chip0=gpiod.chip(0)#Motor 1, Encoder 2, Pin 8 = chip 1, line 91, (Yellow Wire)
         Chip1 = gpiod.chip(1)#Motor 1, Encoder 1, Pin 7 = chip 1, line 98, (Green Wire)
-        #M2E1=gpiod.chip(0)#Motor 2, Encoder 1, Pin 16  = chip 1, line 93 (Green Wire)
-        #M2E2 = gpiod.chip(1)#Motor 2, Encoder 2, Pin 18  = chip 1, line 94 (Yellow Wire)
+        M2E1=gpiod.chip(0)#Motor 2, Encoder 1, Pin 16  = chip 1, line 93 (Green Wire)
+        M2E2 = gpiod.chip(1)#Motor 2, Encoder 2, Pin 18  = chip 1, line 94 (Yellow Wire)
         
         self.M1E1_Line = Chip1.get_line(98)
         self.M1E2_Line=Chip1.get_line(91)
@@ -45,26 +45,26 @@ class Encoder_Reader(Node):
         self.right_test_2=0
         self.count=0
         '''
-        M1E1_config=gpiod.line_request()
-        M1E2_config=gpiod.line_request()
-        M2E1_config=gpiod.line_request()
-        M2E2_config=gpiod.line_request()
+        self.M1E1_config=gpiod.line_request()
+        self.M1E2_config=gpiod.line_request()
+        self.M2E1_config=gpiod.line_request()
+        self.M2E2_config=gpiod.line_request()
 
-        M1E1_config.consumer="encoder_reader"
-        M1E2_config.consumer="encoder_reader"
-        M2E1_config.consumer="encoder_reader"
-        M2E2_config.consumer="encoder_reader"
+        self.M1E1_config.consumer="encoder_reader"
+        self.M1E2_config.consumer="encoder_reader"
+        self.M2E1_config.consumer="encoder_reader"
+        self.M2E2_config.consumer="encoder_reader"
 
-        M1E1_config.request_type=gpiod.line_request.DIRECTION_INPUT
-        M1E2_config.request_type=gpiod.line_request.DIRECTION_INPUT
-        M2E1_config.request_type=gpiod.line_request.DIRECTION_INPUT
-        M2E2_config.request_type=gpiod.line_request.DIRECTION_INPUT
+        self.M1E1_config.request_type=gpiod.line_request.DIRECTION_INPUT
+        self.M1E2_config.request_type=gpiod.line_request.DIRECTION_INPUT
+        self.M2E1_config.request_type=gpiod.line_request.DIRECTION_INPUT
+        self.M2E2_config.request_type=gpiod.line_request.DIRECTION_INPUT
 
-        self.M1E1_Line.request(M1E1_config)
-        self.M1E2_Line.request(M1E2_config)
-        self.M2E1_Line.request(M2E1_config)
-        self.M2E2_Line.request(M2E2_config)
-        '''
+        self.M1E1_Line.request(self.M1E1_config)
+        self.M1E2_Line.request(self.M1E2_config)
+        self.M2E1_Line.request(self.M2E1_config)
+        self.M2E2_Line.request(self.M2E2_config)
+        
         self.left_encoder_pub = self.create_publisher(Int32MultiArray, 'left_encoder', 10)
         self.right_encoder_pub = self.create_publisher(Int32MultiArray, 'right_encoder', 10)
 
@@ -72,15 +72,23 @@ class Encoder_Reader(Node):
         self.timer_ = self.create_timer(0.1, self.encoder_test)
 
     def encoder_test(self):
+       '''
        self.left_test_1=(self.left_test_1+1)%2
        self.left_test_2=(self.left_test_1+1)%2
        self.right_test_1=(self.left_test_1+1)%2
        self.right_test_2=(self.left_test_1+1)%2
+       '''
+
+       
+       
+       
+       
+
        left=Int32MultiArray()
-       left.data=[self.left_test_1,self.left_test_2]
+       left.data=[self.M1E1_Line.request(self.M1E1_config),self.M1E2_Line.request(self.M1E2_config)]
         
        right=Int32MultiArray()
-       right.data=[self.right_test_1,self.left_test_2]
+       right.data=[self.M2E1_Line.request(self.M2E1_config),self.M2E2_Line.request(self.M2E2_config)]
         
        self.left_encoder_pub.publish(left)
        self.right_encoder_pub.publish(right)
