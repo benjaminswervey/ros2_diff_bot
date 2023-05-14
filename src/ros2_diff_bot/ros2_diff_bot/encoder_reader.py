@@ -85,10 +85,10 @@ class Encoder_Reader(Node):
        
 
        left=Int32MultiArray()
-       left.data=[self.M1E1_Line.request(self.M1E1_config),self.M1E2_Line.request(self.M1E2_config)]
+       left.data=[self.M1E1_Line.get_value(),self.M1E2_Line.get_value()]
         
        right=Int32MultiArray()
-       right.data=[self.M2E1_Line.request(self.M2E1_config),self.M2E2_Line.request(self.M2E2_config)]
+       right.data=[self.M2E1_Line.get_value(),self.M2E2_Line.get_value()]
         
        self.left_encoder_pub.publish(left)
        self.right_encoder_pub.publish(right)
