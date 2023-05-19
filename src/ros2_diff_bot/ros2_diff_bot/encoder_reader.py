@@ -30,11 +30,11 @@ class Encoder_Reader(Node):
         super().__init__('encoder_reader')
         
         Chip0=gpiod.chip(0)#Motor 1, Encoder 2, Pin 8 = chip 1, line 91, (Yellow Wire)
-        Chip1 = gpiod.chip(1)#Motor 1, Encoder 1, Pin 7 = chip 1, line 98, (Green Wire)
-        M2E1=gpiod.chip(0)#Motor 2, Encoder 1, Pin 16  = chip 1, line 93 (Green Wire)
-        M2E2 = gpiod.chip(1)#Motor 2, Encoder 2, Pin 18  = chip 1, line 94 (Yellow Wire)
+        Chip1 = gpiod.chip(1)#Motor 1, Encoder 1, Pin 12 = chip 0, line 6, (Green Wire)
+        #M2E1=gpiod.chip(0)#Motor 2, Encoder 1, Pin 16  = chip 1, line 93 (Green Wire)
+        #M2E2 = gpiod.chip(1)#Motor 2, Encoder 2, Pin 18  = chip 1, line 94 (Yellow Wire)
         
-        self.M1E1_Line = Chip1.get_line(98)
+        self.M1E1_Line = Chip0.get_line(6)
         self.M1E2_Line=Chip1.get_line(91)
         self.M2E1_Line = Chip1.get_line(93)
         self.M2E2_Line=Chip1.get_line(94)
