@@ -35,7 +35,7 @@ class Encoder_Reader(Node):
         #M2E2 = gpiod.chip(1)#Motor 2, Encoder 2, Pin 18  = chip 1, line 94 (Yellow Wire)
         
         self.M1E1_Line = Chip0.get_line(4)
-        self.M1E2_Line=Chip1.get_line(91)
+        self.M1E2_Line=Chip1.get_line(98)
         self.M2E1_Line = Chip1.get_line(93)
         self.M2E2_Line=Chip1.get_line(94)
         '''
